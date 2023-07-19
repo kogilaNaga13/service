@@ -1,0 +1,102 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.container{
+	width:90%;
+	margin:0 auto;
+}
+.row{
+	display:flex;
+	flex-wrap:wrap;
+}
+.head{
+	text-align:center;
+	font-size:30px;
+	position:relative;
+}
+.head p{
+	font-size:20px;
+	padding-bottom:40px;
+}
+h2::after{
+	content:"";
+	width:5%;
+	height:3px;
+	background-color:red;
+	display:inline-block;
+	top:30px;
+	left:39%;
+	position:absolute;
+}
+h2::before{
+	content:"";
+	width:5%;
+	height:3px;
+	background-color:red;
+	display:inline-block;
+	position:absolute;
+	bottom:5px;
+	top:30px;
+	right:39%;
+	
+}
+
+.card::after{
+	content:"";
+	width:70%;
+	height:3px;
+	background-color:grey;
+	display:inline-block;
+	position:absolute;
+	top:0;
+	right:18%;
+}
+.card::before{
+	content:"";
+	width:5%;
+	height:3px;
+	background-color:red;
+	display:inline-block;
+	position:absolute;
+	top:0;
+	left:10;
+}
+.col{
+	width:50%;
+	padding:0 15px;
+}
+.card{
+	align-items:center;
+	display:flex;
+	position:relative;
+
+}
+.icon{	
+		font-size:50px;
+		position:relative;
+	}
+	.icon::after{
+		content:"";
+		position:absolute;
+		bottom:2px;
+		right:-10px;
+		background-color:pink;
+		width:30px;
+		height:30px;
+		border-radius:50%;
+		border-color:solid white;
+		z-index:-1;
+	}
+		
+.edit{
+	padding:42px;
+}
+.flex{
+	flex-wrap:wrap;
+	display:flex;
+}
+.edit h3{
+	font-size:35px;
+}
